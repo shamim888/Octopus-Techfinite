@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="./tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <header class=" sticky top-0 z-50">
+        <!-- ===================head-1==================== -->
+        <section class="place bg-color-1">
+          <div class=" relative container max-w-screen-xl mx-auto px-4 py-2">
+            <div class="row">
+              <div class="w-full px-16 flex flex-wrap items-center justify-center gap-3 sm:gap-0">
+                <h3 class=" px-4 font-bold text-xl">We are hiring!</h3>
+                <a href="#" class=" px-4 text-base text-gray-900">Learn more <span><i class="fa-solid fa-caret-right"></i></span></a>
+              </div>
+              <span class="cross absolute top-1/4 right-4 cursor-pointer"><i class="fa-solid fa-xl fa-square-xmark"></i></span>
+            </div>
+          </div>
+        </section>
+        <!-- ===================head-1 End==================== -->
+        <!-- ================Navbar====================== -->
+        <nav class=" bg-color-2 shadow-lg">
+          <div class=" relative container max-w-screen-xl mx-auto px-4 py-4">
+            <div class="row items-center justify-between">
+              <div class="w-1/3 px-4">
+                <a href="./index.html"><img src="../image/Logo.png" alt="Logo" class=""></a>
+              </div>
+              <div class=" w-2/3 flex flex-wrap px-4 items-center">
+                <div class="w-7/12">
+                  <ul class=" nav-bar hidden lg:flex flex-wrap items-center justify-between">
+                    <li class=" py-3"><a href="./index.html" class=" relative text-black hover:text-logic-pest">Home</a></li>
+                    <li class=" py-3"><a href="about.html" class=" relative text-black hover:text-logic-pest">About us</a></li>
+                    <li class=" py-3"><a href="#" class=" relative text-black hover:text-logic-pest">Pricing</a></li>
+                    <li class=" py-3"><a href="./contacts.html" class=" relative text-logic-pest">Contact us</a></li>
+                    <li class=" py-3"><a href="#" class=" relative text-black hover:text-logic-pest">Career</a></li>
+                    <li class=" py-3"><a href="#" class=" relative text-black hover:text-logic-pest">Blog</a></li>
+                  </ul>
+                </div>
+                <div class="w-5/12">
+                  <ul class=" hidden lg:flex flex-wrap items-center justify-end gap-4">
+                    <li><a href="#" class=" px-4 py-3 text-black hover:text-logic-pest">Login</a></li>
+                    <li><a href="#" class=" px-6 py-3 btn-col-1  transition ease-in-out duration-300 rounded-md text-white">Get Started</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- =================Mobile Menu Button=================== -->
+              <span class="mobile-menu-btn cursor-pointer absolute block lg:hidden top-1/3 right-4">
+                <i class="fas fa-bars fa-2xl text-color-1"></i>
+              </span>
+              <!-- =================Mobile Menu Button End=================== -->
+            </div>
+            <!-- ========================Mobile Menu=============================== -->
+            <div class="mobile-menu hidden lg:hidden relative">
+              <ul class=" z-30 absolute top-2 w-full divide-y divide-bg-color-2 list rounded-sm shadow-xl">
+                <li class=""><a href="index.html" class=" relative flex p-4">Home</a></li>
+                <li class=""><a href="about.html" class=" relative flex p-4">About us</a></li>
+                <li class=""><a href="#" class=" relative flex p-4">Pricing</a></li>
+                <li class=""><a href="./contacts.html" class=" relative flex p-4">Contact us</a></li>
+                <li class=""><a href="#" class=" relative flex p-4">Career</a></li>
+                <li class=""><a href="#" class=" relative flex p-4">Blog</a></li>
+              </ul>
+            </div>
+            <!-- ========================Mobile Menu END=============================== -->
+          </div>
+        </nav>
+        <!-- ================Navbar End====================== -->
+    </header>
+    <!-- =====================Hero Section================== -->
+    <section class="">
+      <div class="container max-w-screen-xl mx-auto px-4 py-10">
+        <div class="row items-center">
+          <div class=" w-full md:w-6/12 px-4 space-y-4 md:space-y-8">
+            <h2 class=" md:leading-tight title font-bold text-2xl lg:text-5xl">Contact Us</h2>
+            <p class=" text-base text-gray-700 pb-8 lg:pb-0">We have a professional and excellent team, totally focused on your business. Need some clarification? Don't hesitate to contact us, let's talk a little bit and discuss your ideas, without commitment.</p>
+          </div>
+          <div class=" w-full md:w-6/12 px-4">
+              <div class="flex justify-start md:justify-end items-center">
+                  <img src="../image/support.jpg" alt="support">
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =====================Hero Section End================== -->
+    <!-- ===========================Form Section Start============================ -->
+    <section class=" py-10">
+        <div class="container mx-auto max-w-screen-xl px-4">
+            <div class="row">
+                <div class="lg:w-2/3 md:1/2 w-full px-4 space-y-4 lg:space-y-6">
+                    <div class="flex flex-wrap sm:justify-start justify-center">
+                        <p class="top-content uppercase text-gradient font-bold text-base lg:text-lg">Send a message</p>
+                    </div>
+                    <h1 class="md:leading-tight title font-bold text-2xl lg:text-4xl">Get in Touch</h1>
+                    <p class=" text-base text-gray-700">We will respond to your message as soon as possible.</p>
+                    <div class="w-full py-4">
+                        <form action="" id="contact_form" class="ct_form">
+                            <div class="grid sm:grid-cols-2 grid-cols-1 gap-6">
+                                <div class="">
+                                    <input type="text" name="name" class="rounded bg-blue-50 px-4 py-4 w-full border border-blue-50 focus:border-blue-200 focus:outline-none" placeholder="Name">
+                                </div>
+                                <div class="">
+                                    <input type="email" name="email" class="rounded bg-blue-50 px-4 py-4 w-full border border-blue-50 focus:border-blue-200 focus:outline-none" placeholder="Email">
+                                </div>
+                                <div class="">
+                                    <input type="text" name="phone" class="rounded bg-blue-50 px-4 py-4 w-full border border-blue-50 focus:border-blue-200 focus:outline-none" placeholder="Phone">
+                                </div>
+                                <div class="">
+                                    <input type="text" name="subject" class="rounded bg-blue-50 px-4 py-4 w-full border border-blue-50 focus:border-blue-200 focus:outline-none" placeholder="Subject">
+                                </div>
+                            </div>
+                            <div class="col-12 mt-6">
+                                <textarea rows="6" name="message" class="rounded bg-blue-50 px-4 py-4 w-full border border-blue-50 focus:border-blue-200 focus:outline-none" placeholder="Message"></textarea>
+                            </div>
+                            <button class="py-4 pl-8 pr-2 rounded mt-10 sm:w-52 w-full bg-blue-primary font-bold arrow items-center">
+                                <a class="mr-6 md:text-lg text-md uppercase leading-8" herf="javascript:;">Submit</a>                            
+                            </button>
+                        </form>
+                    </div>
+                </div>                                   
+                <div class="lg:w-1/3 md:1/2 w-full px-4">
+                    <div class="contacts">
+                        <h4 class=" md:leading-tight title font-bold text-2xl lg:text-4xl">Logic Line Info</h4>
+                        <p class="mt-6 text-gray-700 text-base font-normal">If you would like to find out more about how we can help you, please give us a call or drop us an email. </p>
+                        <p class="mt-4 text-gray-700 text-base font-normal"> We welcome your ideas and suggestions about this website and/or any other issues that you wish to raise. </p>
+                        <ul class="mt-12">
+                            <li class="flex items-center mt-8">
+                                <a href="javascript:;" class="bg-blue-100 h-10 w-10 text-center rounded-full">
+                                    <i class="fa-solid fa-phone text-2xl text-color-1 mt-2"></i>                                        
+                                </a>
+                                <p class="ml-4 font-medium text-color-1 -mt-2.5 text-xl">01955-786556</p>
+                            </li>
+                            <li class="flex items-center mt-8">
+                                <a href="javascript:;" class="bg-blue-100 h-10 w-10 text-center rounded-full">
+                                    <i class="fa-solid text-2xl text-color-1 mt-2 fa-envelope"></i>                                        
+                                </a>
+                                <p class="ml-4 font-medium text-color-1 -mt-2.5 text-xl">contact@logicline.tech</p>
+                            </li>
+                            <li class="flex items-center mt-8">
+                                <div>
+                                    <a href="javascript:;" class="bg-blue-100 h-10 w-10 text-center rounded-full inline-block">
+                                        <i class="fa-solid text-2xl text-color-1 mt-2 fa-location-dot"></i>                                        
+                                    </a>
+                                </div>
+                                <p class="ml-4 font-medium text-color-1 -mt-2.5 text-xl">6th Floor, South Zone Hospital <br> 33 Outer Bypass Rd, Khulna 9100</p>
+                            </li>
+                            <li class=" mt-12 bg-blue-100 text-center w-full hover:bg-blue-200">
+                                <a target="_blank" href="https://www.google.com/maps/place/South+Zone+private+Hospital/@22.8332677,89.5333983,18.2z/data=!4m6!3m5!1s0x39ff9abb701e9ce7:0x258b13e2ccc970c1!4b1!8m2!3d22.8323564!4d89.5353803" class="text-color-1 font-semibold block  p-4">VIEW MAP</a>
+                            </li>
+                        </ul>
+                    </div>                            
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===========================Form Section End============================ -->
+    <!-- footer section starts -->
+    <div class=" py-10  bg-color-2">
+      <div class="container  max-w-screen-xl mx-auto px-4 py-4">
+          <div class="row">
+              <div class="w-full sm:w-6/12 md:w-3/12  ">
+                  <div class="md:px-4 px-2">
+                      <img class="w-28 h-14" src="../image/Logo.png" alt="logo">
+                  </div>
+                  <p class="md:px-4 px-2 py-2">Logic Line is a software firm in Khulna.
+                  </p>
+                  <p class="md:px-4 px-2 py-1">
+                      <span class="text font-normal text-base ">
+                          <i class="fa-solid fa-phone"></i> 01955786556
+                      </span>
+                  </p>
+                  <p class="md:px-4 px-2 py-1">
+                  <span class="text font-normal  text-base ">
+                      <i class="fa-solid fa-envelope"></i> contact@logicline.tech
+                  </span>
+                  </p>
+                  <p class="md:px-4 px-2 py-1">
+                  <span class="text font-normal  text-base">
+                      <i class="fa-solid fa-location-dot"></i>  6th Floor, South Zone Hospital,33 Outer Bypass Rd, Khulna-9100
+                  </span>
+                  </p>
+                  <div class="px-4">
+                      <div class="mt-8  cursor-pointer border rounded text-center p-4 hover:bg-gradient bg-color-4  text-white">
+                          <a href="/contact-us" class=" ">GET IN TOUCH</a>
+                      </div>
+                  </div>
+              </div>
+          
+              <div class="w-full sm:w-6/12 md:w-3/12 sm:pl-10 lg:pl-20 capitalize  py-4  md:py-0">
+                  <h2 class="px-2 text-3xl mb-4 font-semibold">Menu</h2> <!--text-white -->
+                  <ul class="px-2 py-2 space-y-2 ">
+                      <li><a class="hover:text-gradient " href="index.html">home</a></li>
+                      <li><a class="hover:text-gradient" href="about.html">about</a></li>
+                      <li><a class="hover:text-gradient" href="pricing.html">pricing</a></li>
+                      <li><a class="hover:text-gradient" href="features.html">features</a></li>
+                      <li><a class="hover:text-gradient" href="blog.html">blog</a></li>
+                      <li><a class="hover:text-gradient" href="career.html">career</a></li>
+                      <li><a class="hover:text-gradient" href="contacts.html">contact</a></li>
+                  </ul>
+              </div>
+          <div class="w-full sm:w-6/12 md:w-3/12 capitalize  py-4 md:py-0">
+              <h2 class="px-2 text-3xl mb-4   font-semibold">Services</h2>
+              <ul class="px-2 py-2 space-y-2  ">
+              <li><a class="hover:text-gradient" href="styleguide.html">Mobile apps</a> </li>
+              <li><a class="hover:text-gradient" href="licenses.html">Web Development</a> </li>
+              <li><a class="hover:text-gradient" href="changelog.html">Server </a> </li>
+              <li><a class="hover:text-gradient" href="instructions.html">Ui/Ux </a> </li>
+              
+              </ul>
+          </div>
+          <div class="w-full sm:w-6/12 md:w-3/12 sm:pl-10 md:pl-0  capitalize  py-4 md:py-0">
+              <h2 class="px-2 text-3xl mb-4 font-semibold">Social</h2>
+              <div class="flex px-2 py-2 space-x-6  sm:space-x-3 md:space-x-4">
+              <a href="" class="hover:text-gradient text-3xl " ><i class="fa-brands fa-square-facebook"></i></a>
+              <a href="" class="hover:text-gradient text-3xl" ><i class=" fa-brands fa-linkedin"></i></a>
+              <a href="" class="hover:text-gradient text-3xl" ><i class=" fa-brands fa-instagram"></i></a>
+              <a href="" class="hover:text-gradient text-3xl" ><i class=" fa-brands fa-twitter "></i></a>
+              </div>
+          </div>
+          </div>
+      </div>
+    </div>
+    <div class="bg-color-2">
+    <div class="container mx-auto px-4  ">
+        <div class="row">
+        <div class="w-full border-gray-500 border-b-2 py-4">
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="bg-color-2">
+    <div class="container mx-auto px-4 py-4 ">
+        <div class="row">
+        <div class="w-full text-center">
+            <p class="font-semibold"> <span class="pr-2"><i class="fa-regular fa-copyright "> </i> 2023</span> All rights reserved by <a href="index.html" class="text-lg hover:text-gradient ">Logic Line.</a></p>
+        </div>
+        </div>
+    </div>
+    </div>
+    <!-- footer section ends -->
+    <script src="../js/index.js"></script>
+</body>
+</html>
